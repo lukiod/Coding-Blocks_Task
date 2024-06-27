@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="vanilla-zoom/vanilla-zoom.css">
+    <title>Create Image Zoom JS Vanilla</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Vanilla JS Image Zoom Plugin</h1>
+        <p>Select an image by clicking on the previews. Hover on the large image to inspect it in detail.</p> 
+
+        <div id="my-gallery" class="vanilla-zoom">
+            <div class="sidebar">
+                <img src="images/image1.webp" class="small-preview">
+                <img src="images/image2.jpg" class="small-preview">
+                <img src="images/image3.jpg" class="small-preview">
+                <img src="images/image4.jpg" class="small-preview">
+            </div>
+            <div class="zoomed-image"></div>
+        </div>
+</div>
+<script src="vanilla-zoom/vanilla-zoom.js"></script>
+<script>
+    vanillaZoom.init('#my-gallery');
+</script>
+</body>
+</html>
